@@ -1,0 +1,10 @@
+node_modules
+package-lock.json
+.log
+.db
+db
+.env
+.env.save
+.env.save.1
+access.log
+backup.tar
