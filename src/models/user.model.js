@@ -8,7 +8,7 @@ const { compareSync, hashSync, genSaltSync } = require("bcryptjs");
     password: { type: String, required: true }
  });
 
- UserSchema.methods.toJSON() = function(){
+ UserSchema.methods.toJSON = function(){
     let user = this.toObject()
     delete user.password;
     return user;
