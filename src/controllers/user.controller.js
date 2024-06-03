@@ -19,13 +19,13 @@ class UserController {
 
   async update(req, res) {
     const { body } = req;
-    const { userId } = req.parms;
+    const { userId } = req.params;
     const updatedUser = await _userService.update(userId, body);
     return res.send(updatedUser);
   }
 
   async delete(req, res) {
-    const { userId } = req.parmas;
+    const { userId } = req.params;
     const deleteUser = await _userService.delete(userId);
     return res.send(deleteUser);
   }
